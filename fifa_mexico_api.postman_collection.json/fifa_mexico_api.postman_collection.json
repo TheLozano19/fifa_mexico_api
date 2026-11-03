@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "8f58f1ab-ce76-4340-ac16-eb7c20ca2d23",
+    "name": "fifa_mexico_api.postman_collection.json",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59096377",
+    "_collection_link": "https://go.postman.co/collection/59096377-8f58f1ab-ce76-4340-ac16-eb7c20ca2d23?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Partidos Grupo A",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/calendar/matches?{{idCompetition}}{{idSeason}}{{idGroup}}{{language}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "calendar",
+            "matches"
+          ],
+          "query": [
+            {
+              "key": "{{idCompetition}}{{idSeason}}{{idGroup}}{{language}}",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Timeline Partido",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/timelines//400021443?{{language}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "timelines",
+            "",
+            "400021443"
+          ],
+          "query": [
+            {
+              "key": "{{language}}",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    },
+    {
+      "key": "idCompetition",
+      "value": ""
+    },
+    {
+      "key": "idSeason",
+      "value": ""
+    },
+    {
+      "key": "idGroup",
+      "value": ""
+    },
+    {
+      "key": "language",
+      "value": ""
+    }
+  ]
+}
